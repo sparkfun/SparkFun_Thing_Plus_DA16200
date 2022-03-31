@@ -7776,6 +7776,11 @@ LiPo battery.</text>
 <junction x="132.08" y="121.92"/>
 <label x="129.54" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="GPIO1"/>
+<wire x1="373.38" y1="111.76" x2="363.22" y2="111.76" width="0.1524" layer="91"/>
+<label x="363.22" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -7909,13 +7914,6 @@ LiPo battery.</text>
 <pinref part="J2" gate="G$1" pin="GPIO4"/>
 <wire x1="373.38" y1="119.38" x2="363.22" y2="119.38" width="0.1524" layer="91"/>
 <label x="363.22" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RTC_WAKE2" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="GPIO1"/>
-<wire x1="373.38" y1="111.76" x2="363.22" y2="111.76" width="0.1524" layer="91"/>
-<label x="363.22" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="F_CLK" class="0">
