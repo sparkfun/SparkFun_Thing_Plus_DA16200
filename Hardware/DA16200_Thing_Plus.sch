@@ -24541,7 +24541,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
 <part name="FD4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device=""/>
-<part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39289/1"/>
+<part name="I2C_PU" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_2-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39289/1"/>
 <part name="H3" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="H4" library="SparkFun-Hardware" deviceset="STAND-OFF" device=""/>
 <part name="J5" library="SparkFun-Connectors" deviceset="USB_C" device="_4-LAYER-ISOLATED" value="USB C"/>
@@ -24638,7 +24638,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="WP" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="CURRENT" library="SparkFun-Jumpers" deviceset="JUMPER-COMBO_2_NC_TRACE" device=""/>
+<part name="MEAS'" library="SparkFun-Jumpers" deviceset="JUMPER-COMBO_2_NC_TRACE" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
@@ -24646,9 +24646,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="TMS" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
-<part name="TCLK" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
 <part name="GPIOC7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
-<part name="GPIO8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -24698,7 +24696,7 @@ SCL lines</text>
 <text x="172.974" y="180.086" size="2.54" layer="94" font="vector" align="center">DA16200 Module</text>
 <text x="106.68" y="45.72" size="1.778" layer="97" font="vector">Close WP jumper to 
 enable write protection.</text>
-<text x="58.42" y="256.54" size="1.778" layer="97" font="vector">Cut CURRENT jumper to measure
+<text x="58.42" y="256.54" size="1.778" layer="97" font="vector">Cut MEAS jumper to measure
 input current from either USB or 
 LiPo battery.</text>
 <wire x1="76.2" y1="66.04" x2="147.32" y2="66.04" width="0.2032" layer="97" style="longdash"/>
@@ -24748,8 +24746,8 @@ from power.</text>
 <instance part="J4" gate="G$1" x="246.38" y="241.3" smashed="yes" rot="MR90">
 <attribute name="NAME" x="252.222" y="238.76" size="1.778" layer="95" rot="MR90"/>
 </instance>
-<instance part="JP1" gate="G$1" x="43.18" y="73.66" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.148" y="69.977" size="1.778" layer="95" font="vector"/>
+<instance part="I2C_PU" gate="G$1" x="43.18" y="73.66" smashed="yes" rot="R270">
+<attribute name="NAME" x="38.608" y="69.977" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="H3" gate="G$1" x="429.26" y="33.02" smashed="yes"/>
 <instance part="H4" gate="G$1" x="429.26" y="30.48" smashed="yes"/>
@@ -25072,7 +25070,7 @@ from power.</text>
 <instance part="GND26" gate="1" x="96.52" y="10.16" smashed="yes">
 <attribute name="VALUE" x="96.52" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="CURRENT" gate="JP1" x="55.88" y="236.22" smashed="yes">
+<instance part="MEAS'" gate="JP1" x="55.88" y="236.22" smashed="yes">
 <attribute name="NAME" x="55.88" y="239.014" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="419.1" y="48.26" smashed="yes"/>
@@ -25094,14 +25092,8 @@ from power.</text>
 <instance part="TMS" gate="G$1" x="307.34" y="157.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="307.34" y="152.4" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
-<instance part="TCLK" gate="G$1" x="309.88" y="157.48" smashed="yes" rot="R270">
-<attribute name="NAME" x="309.88" y="152.4" size="1.778" layer="95" font="vector" rot="R270"/>
-</instance>
 <instance part="GPIOC7" gate="G$1" x="312.42" y="157.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="312.42" y="152.4" size="1.778" layer="95" font="vector" rot="R270"/>
-</instance>
-<instance part="GPIO8" gate="G$1" x="314.96" y="157.48" smashed="yes" rot="R270">
-<attribute name="NAME" x="314.96" y="152.4" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -25135,7 +25127,7 @@ from power.</text>
 <pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="I2C_PU" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="78.74" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 </segment>
@@ -25522,14 +25514,14 @@ from power.</text>
 <net name="N$2" class="0">
 <segment>
 <wire x1="35.56" y1="71.12" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="I2C_PU" gate="G$1" pin="3"/>
 <wire x1="35.56" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="I2C_PU" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="73.66" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -25610,7 +25602,7 @@ from power.</text>
 <junction x="48.26" y="231.14"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="CURRENT" gate="JP1" pin="1"/>
+<pinref part="MEAS'" gate="JP1" pin="1"/>
 <wire x1="48.26" y1="236.22" x2="50.8" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -25782,12 +25774,8 @@ from power.</text>
 </segment>
 <segment>
 <pinref part="J7" gate="J1" pin="NC/TDI"/>
-<wire x1="304.8" y1="167.64" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="167.64" x2="317.5" y2="167.64" width="0.1524" layer="91"/>
 <label x="317.5" y="167.64" size="1.27" layer="95" xref="yes"/>
-<pinref part="GPIO8" gate="G$1" pin="1"/>
-<wire x1="314.96" y1="167.64" x2="317.5" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="157.48" x2="314.96" y2="167.64" width="0.1524" layer="91"/>
-<junction x="314.96" y="167.64"/>
 </segment>
 </net>
 <net name="U0RXI" class="0">
@@ -25833,12 +25821,8 @@ from power.</text>
 <net name="TCLK" class="0">
 <segment>
 <pinref part="J7" gate="J1" pin="SWDCLK/TCK"/>
-<wire x1="304.8" y1="172.72" x2="309.88" y2="172.72" width="0.1524" layer="91"/>
 <label x="317.5" y="172.72" size="1.27" layer="95" xref="yes"/>
-<pinref part="TCLK" gate="G$1" pin="1"/>
-<wire x1="309.88" y1="172.72" x2="317.5" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="157.48" x2="309.88" y2="172.72" width="0.1524" layer="91"/>
-<junction x="309.88" y="172.72"/>
+<wire x1="304.8" y1="172.72" x2="317.5" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="JTAG_TCLK"/>
@@ -26114,7 +26098,7 @@ from power.</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="CURRENT" gate="JP1" pin="2"/>
+<pinref part="MEAS'" gate="JP1" pin="2"/>
 <pinref part="U7" gate="G$1" pin="IN"/>
 <wire x1="60.96" y1="236.22" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
 </segment>
