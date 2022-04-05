@@ -215,10 +215,10 @@
 <text x="7.239" y="19.812" size="1.27" layer="21" font="vector" ratio="15">+</text>
 <text x="8.255" y="15.24" size="1.27" layer="21" font="vector" ratio="15" rot="R90">-</text>
 <text x="13.081" y="-19.177" size="1.778" layer="51" font="vector" ratio="15">Priyanka Makin</text>
-<text x="15.24" y="55.88" size="1.778" layer="1" font="vector" ratio="15">1</text>
-<text x="16.51" y="55.88" size="1.778" layer="2" font="vector" ratio="15">2</text>
-<text x="15.24" y="53.34" size="1.778" layer="15" font="vector" ratio="15">3</text>
-<text x="17.78" y="53.34" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">4</text>
+<text x="19.05" y="55.88" size="1.778" layer="1" font="vector" ratio="15">1</text>
+<text x="20.32" y="55.88" size="1.778" layer="2" font="vector" ratio="15">2</text>
+<text x="19.05" y="53.34" size="1.778" layer="15" font="vector" ratio="15">3</text>
+<text x="21.59" y="53.34" size="1.778" layer="16" font="vector" ratio="15" rot="MR0">4</text>
 <text x="48.641" y="44.323" size="1.778" layer="51" font="vector" ratio="15">Four Layers</text>
 </plain>
 <libraries>
@@ -9163,7 +9163,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="NAME" x="12.708" y="10.414" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-15238" x="12.708" y="9.652" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
-<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="200OHM-0402T-1/16W-1%" x="19.685" y="13.724" smashed="yes" rot="R90">
+<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="200" x="19.685" y="13.724" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.923" y="13.724" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-15550" x="19.685" y="13.724" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
@@ -9181,7 +9181,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="PROD_ID" value="RES-14962" x="15.375" y="14.224" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="15.375" y="13.462" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="JP4" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" package3d_urn="urn:adsk.eagle:package:39279/1" value="JUMPER-SMT_2_NO_SILK" x="8.89" y="1.27" smashed="yes" rot="MR0">
+<element name="SHLD" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" package3d_urn="urn:adsk.eagle:package:39279/1" value="JUMPER-SMT_2_NO_SILK" x="8.89" y="1.27" smashed="yes" rot="MR0">
 <attribute name="NAME" x="8.89" y="2.413" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="8.89" y="0.127" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
@@ -9375,7 +9375,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="21.59" y1="8.001" x2="21.844" y2="8.255" width="0.1778" layer="1"/>
 <contactref element="D5" pad="2"/>
 <contactref element="R14" pad="1"/>
-<contactref element="JP4" pad="1"/>
+<contactref element="SHLD" pad="1"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R1" pad="2"/>
 <polygon width="0.1778" layer="2" isolate="0.3048">
@@ -9892,6 +9892,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="2.667" y1="40.005" x2="2.032" y2="39.37" width="0.1778" layer="16"/>
 <wire x1="1.27" y1="39.37" x2="2.032" y2="39.37" width="0.1778" layer="16"/>
 <wire x1="6.35" y1="48.26" x2="3.429" y2="48.26" width="0.1778" layer="16"/>
+<contactref element="C3" pad="1"/>
+<wire x1="5.715" y1="33.52" x2="1.27" y2="39.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RTC_WAKE1">
 <contactref element="U1" pad="4"/>
@@ -9903,21 +9905,18 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="3.429" y1="47.2821" x2="4.7879" y2="47.2821" width="0.1778" layer="1"/>
 <wire x1="4.7879" y1="47.2821" x2="4.83" y2="47.24" width="0.1778" layer="1"/>
 <wire x1="2.413" y1="36.83" x2="3.048" y2="37.465" width="0.1778" layer="16"/>
+<contactref element="R5" pad="2"/>
+<wire x1="1.27" y1="36.83" x2="6.858" y2="33.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HDR_RTC_WAKE2">
 <contactref element="U1" pad="14"/>
-<contactref element="R5" pad="2"/>
 <contactref element="R7" pad="2"/>
-<contactref element="C3" pad="1"/>
 <contactref element="J2" pad="8"/>
-<wire x1="5.715" y1="33.52" x2="5.842" y2="33.52" width="0.1778" layer="1"/>
-<wire x1="5.842" y1="33.52" x2="6.858" y2="33.52" width="0.1778" layer="1"/>
-<wire x1="6.858" y1="33.52" x2="8.001" y2="33.52" width="0.1778" layer="1"/>
-<wire x1="6.858" y1="33.52" x2="6.858" y2="36.168" width="0.1778" layer="1"/>
 <wire x1="6.858" y1="36.168" x2="6.93" y2="36.24" width="0.1778" layer="1"/>
 <wire x1="1.27" y1="34.29" x2="4.191" y2="34.29" width="0.1778" layer="1"/>
-<wire x1="4.961" y1="33.52" x2="5.715" y2="33.52" width="0.1778" layer="1"/>
 <wire x1="4.191" y1="34.29" x2="4.961" y2="33.52" width="0.1778" layer="1"/>
+<wire x1="6.858" y1="36.168" x2="8.001" y2="33.52" width="0" layer="19" extent="1-1"/>
+<wire x1="4.961" y1="33.52" x2="8.001" y2="33.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="D3" pad="A"/>
@@ -10028,7 +10027,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <contactref element="J5" pad="SHLD2"/>
 <contactref element="J5" pad="SHLD3"/>
 <contactref element="J5" pad="SHLD8"/>
-<contactref element="JP4" pad="2"/>
+<contactref element="SHLD" pad="2"/>
 <wire x1="8.4836" y1="1.27" x2="8.4686" y2="1.255" width="0.1778" layer="16"/>
 <wire x1="8.4686" y1="1.255" x2="7.11" y2="1.255" width="0.1778" layer="16"/>
 <wire x1="9.7324" y1="0.8509" x2="10.7146" y2="0.8509" width="0.1778" layer="1"/>

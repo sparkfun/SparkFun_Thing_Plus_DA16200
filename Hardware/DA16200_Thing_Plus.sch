@@ -24484,12 +24484,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R11" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
-<part name="R13" library="SparkFun-Resistors" deviceset="200OHM" device="-0402T-1/16W-1%" value="200OHM-0402T-1/16W-1%"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="200OHM" device="-0402T-1/16W-1%" value="200"/>
 <part name="CHG" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R18" library="SparkFun-Resistors" deviceset="100OHM" device="-0402-TIGHT-1/16W-1%" value="100"/>
-<part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="SHLD" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U5" library="SparkFun-IC-Memory" deviceset="AT25SF041" device="" value="4MB Flash"/>
@@ -24870,15 +24870,18 @@ from power.</text>
 </instance>
 <instance part="R11" gate="G$1" x="360.68" y="238.76" smashed="yes">
 <attribute name="NAME" x="360.68" y="240.284" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="360.68" y="237.236" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R12" gate="G$1" x="360.68" y="228.6" smashed="yes">
 <attribute name="NAME" x="360.68" y="230.124" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="360.68" y="227.076" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="SUPPLY14" gate="G$1" x="353.06" y="243.84" smashed="yes">
 <attribute name="VALUE" x="353.06" y="246.634" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="R13" gate="G$1" x="297.18" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="295.656" y="30.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="298.704" y="30.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="CHG" gate="G$1" x="210.82" y="233.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="207.518" y="237.236" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
@@ -24894,7 +24897,7 @@ from power.</text>
 <attribute name="NAME" x="33.02" y="242.824" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="33.02" y="239.776" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="JP4" gate="G$1" x="304.8" y="220.98" smashed="yes" rot="R90">
+<instance part="SHLD" gate="G$1" x="304.8" y="220.98" smashed="yes" rot="R90">
 <attribute name="NAME" x="302.006" y="220.98" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
 <instance part="GND23" gate="1" x="312.42" y="213.36" smashed="yes">
@@ -25124,7 +25127,7 @@ from power.</text>
 <wire x1="299.72" y1="226.06" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="J5" gate="J1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="SHLD" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="215.9" x2="304.8" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="213.36" x2="299.72" y2="213.36" width="0.1524" layer="91"/>
 <junction x="299.72" y="213.36"/>
@@ -25677,10 +25680,14 @@ from power.</text>
 <pinref part="U1" gate="G$1" pin="RTC_PWR_KEY"/>
 <wire x1="167.64" y1="127" x2="142.24" y2="127" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="127" x2="129.54" y2="127" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="129.54" x2="142.24" y2="127" width="0.1524" layer="91"/>
 <junction x="142.24" y="127"/>
 <label x="129.54" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="114.3" x2="132.08" y2="127" width="0.1524" layer="91"/>
+<junction x="132.08" y="127"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GPIO3"/>
@@ -25691,8 +25698,12 @@ from power.</text>
 <net name="RTC_WAKE1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RTC_WAKE_UP"/>
-<wire x1="167.64" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
 <label x="129.54" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="119.38" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
+<junction x="142.24" y="124.46"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GPIO2"/>
@@ -25704,18 +25715,10 @@ from power.</text>
 <segment>
 <pinref part="U1" gate="G$1" pin="RTC_WAKE_UP2"/>
 <wire x1="167.64" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="121.92" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
-<junction x="142.24" y="121.92"/>
+<wire x1="149.86" y1="121.92" x2="129.54" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="149.86" y1="121.92" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 <junction x="149.86" y="121.92"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="121.92" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
-<junction x="132.08" y="121.92"/>
 <label x="129.54" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -25812,7 +25815,7 @@ from power.</text>
 <net name="N$24" class="0">
 <segment>
 <pinref part="J5" gate="J1" pin="SHLD"/>
-<pinref part="JP4" gate="G$1" pin="2"/>
+<pinref part="SHLD" gate="G$1" pin="2"/>
 <wire x1="297.18" y1="228.6" x2="304.8" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="228.6" x2="304.8" y2="226.06" width="0.1524" layer="91"/>
 </segment>
