@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -33,8 +33,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -10480,12 +10480,12 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <approved hash="19,1,2d1c2dd87fae7f6a"/>
 <approved hash="19,1,a453a753d325d025"/>
 <approved hash="19,1,2f1e2fdbf9adf968"/>
-<approved hash="19,1,c240c26f3e6f3e40"/>
-<approved hash="19,16,f3c6f3e297e297c6"/>
-<approved hash="19,16,13ff1394f794f7ff"/>
-<approved hash="19,16,3e138aee682870a8"/>
-<approved hash="19,16,023e016d016d023e"/>
-<approved hash="19,16,38083b9113911008"/>
+<approved hash="19,1,5cd25a91a691a6d2"/>
+<approved hash="19,16,e190e1227c9d7c91"/>
+<approved hash="19,16,653c66d496d4953c"/>
+<approved hash="19,16,c3f54284468645f2"/>
+<approved hash="19,16,51d45913c212c4d7"/>
+<approved hash="19,16,5eb49c40ba2b1a15"/>
 </errors>
 </board>
 </drawing>
