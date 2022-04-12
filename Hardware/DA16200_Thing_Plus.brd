@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -9507,8 +9507,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <element name="U$78" library="output" package="#SDA#0" value="" x="5.969" y="52.07" smashed="yes" rot="MR0"/>
 <element name="U$79" library="output" package="#VBT#0" value="" x="6.096" y="24.13" smashed="yes" rot="MR0"/>
 <element name="U$52" library="output" package="#VUB#0" value="" x="6.096" y="29.21" smashed="yes" rot="MR0"/>
-<element name="U$56" library="output" package="THING_PLUS0" value="" x="15.875" y="34.29" smashed="yes" rot="MR0"/>
-<element name="U$80" library="output" package="DA162000" value="" x="15.24" y="32.639" smashed="yes" rot="MR0"/>
+<element name="U$56" library="output" package="THING_PLUS0" value="" x="16.256" y="34.29" smashed="yes" rot="MR0"/>
+<element name="U$80" library="output" package="DA162000" value="" x="15.494" y="32.639" smashed="yes" rot="MR0"/>
 <element name="U$81" library="output" package="DA162000" value="" x="19.431" y="34.925" smashed="yes" rot="R270"/>
 <element name="U$82" library="output" package="#I�C#0" value="" x="16.383" y="49.784" smashed="yes" rot="MR0"/>
 <element name="U$83" library="output" package="WP0" value="" x="9.017" y="42.926" smashed="yes" rot="MR0"/>
@@ -9717,6 +9717,81 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <vertex x="3.429" y="58.42"/>
 <vertex x="0" y="58.42"/>
 </polygon>
+<via x="3.048" y="57.785" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="57.023" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="56.261" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="55.499" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="54.737" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="53.975" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="53.213" extent="1-16" drill="0.3048"/>
+<via x="3.302" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="4.064" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="4.826" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="5.588" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="6.35" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="7.112" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="7.874" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="8.636" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="9.398" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="10.16" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="10.922" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="11.684" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="12.446" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="13.208" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="13.97" y="52.451" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="53.213" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="53.975" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="54.737" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="55.499" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="56.261" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="57.023" extent="1-16" drill="0.3048"/>
+<via x="14.351" y="57.785" extent="1-16" drill="0.3048"/>
+<via x="1.27" y="55.88" extent="1-16" drill="0.3048"/>
+<via x="1.27" y="53.34" extent="1-16" drill="0.3048"/>
+<via x="15.24" y="57.15" extent="1-16" drill="0.3048"/>
+<via x="16.51" y="55.88" extent="1-16" drill="0.3048"/>
+<via x="15.24" y="54.61" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="54.61" extent="1-16" drill="0.3048"/>
+<via x="16.51" y="53.34" extent="1-16" drill="0.3048"/>
+<via x="18.796" y="53.34" extent="1-16" drill="0.3048"/>
+<via x="19.05" y="50.8" extent="1-16" drill="0.3048"/>
+<via x="15.24" y="49.53" extent="1-16" drill="0.3048"/>
+<via x="12.7" y="49.53" extent="1-16" drill="0.3048"/>
+<via x="10.16" y="49.53" extent="1-16" drill="0.3048"/>
+<via x="7.62" y="49.53" extent="1-16" drill="0.3048"/>
+<via x="6.35" y="45.466" extent="1-16" drill="0.3048"/>
+<via x="7.62" y="43.815" extent="1-16" drill="0.3048"/>
+<via x="13.97" y="43.18" extent="1-16" drill="0.3048"/>
+<via x="15.113" y="41.91" extent="1-16" drill="0.3048"/>
+<via x="5.461" y="37.465" extent="1-16" drill="0.3048"/>
+<via x="10.16" y="31.75" extent="1-16" drill="0.3048"/>
+<via x="12.7" y="34.29" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="31.75" extent="1-16" drill="0.3048"/>
+<via x="16.51" y="30.48" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="29.21" extent="1-16" drill="0.3048"/>
+<via x="17.399" y="24.003" extent="1-16" drill="0.3048"/>
+<via x="1.27" y="20.193" extent="1-16" drill="0.3048"/>
+<via x="2.54" y="19.05" extent="1-16" drill="0.3048"/>
+<via x="3.81" y="17.78" extent="1-16" drill="0.3048"/>
+<via x="1.27" y="17.78" extent="1-16" drill="0.3048"/>
+<via x="2.54" y="16.51" extent="1-16" drill="0.3048"/>
+<via x="3.81" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="2.667" y="11.303" extent="1-16" drill="0.3048"/>
+<via x="3.048" y="7.493" extent="1-16" drill="0.3048"/>
+<via x="3.81" y="6.35" extent="1-16" drill="0.3048"/>
+<via x="2.54" y="5.08" extent="1-16" drill="0.3048"/>
+<via x="5.08" y="5.08" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="2.54" extent="1-16" drill="0.3048"/>
+<via x="17.78" y="5.08" extent="1-16" drill="0.3048"/>
+<via x="20.32" y="5.08" extent="1-16" drill="0.3048"/>
+<via x="21.844" y="9.271" extent="1-16" drill="0.3048"/>
+<via x="20.32" y="10.16" extent="1-16" drill="0.3048"/>
+<via x="19.05" y="11.43" extent="1-16" drill="0.3048"/>
+<via x="8.89" y="10.16" extent="1-16" drill="0.3048"/>
+<via x="7.62" y="11.43" extent="1-16" drill="0.3048"/>
+<via x="12.7" y="13.97" extent="1-16" drill="0.3048"/>
+<via x="10.16" y="13.97" extent="1-16" drill="0.3048"/>
+<via x="7.62" y="13.97" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="V_USB">
 <contactref element="D2" pad="A"/>
@@ -9962,9 +10037,10 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="16.768" y1="47.24" x2="16.764" y2="47.244" width="0.1778" layer="1"/>
 <via x="16.764" y="47.244" extent="1-16" drill="0.3048"/>
 <wire x1="16.764" y1="47.244" x2="15.867" y2="47.244" width="0.1778" layer="16"/>
-<wire x1="1.27" y1="52.07" x2="16.256" y2="52.07" width="0.1778" layer="1"/>
-<wire x1="16.256" y1="52.07" x2="16.764" y2="51.562" width="0.1778" layer="1"/>
-<wire x1="16.764" y1="51.562" x2="16.764" y2="47.244" width="0.1778" layer="1"/>
+<wire x1="16.129" y1="51.435" x2="1.905" y2="51.435" width="0.1778" layer="1"/>
+<wire x1="1.27" y1="52.07" x2="1.905" y2="51.435" width="0.1778" layer="1"/>
+<wire x1="16.129" y1="51.435" x2="16.764" y2="50.8" width="0.1778" layer="1"/>
+<wire x1="16.764" y1="50.8" x2="16.764" y2="47.244" width="0.1778" layer="1"/>
 <wire x1="16.764" y1="47.244" x2="16.256" y2="47.244" width="0.1778" layer="2"/>
 <wire x1="16.256" y1="47.244" x2="15.621" y2="46.609" width="0.1778" layer="2"/>
 <wire x1="14.732" y1="8.255" x2="10.668" y2="8.255" width="0.1778" layer="2"/>
@@ -9985,12 +10061,12 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <via x="16.891" y="46.228" extent="1-16" drill="0.3048"/>
 <wire x1="16.891" y1="46.228" x2="16.51" y2="45.847" width="0.1778" layer="16"/>
 <wire x1="16.51" y1="45.847" x2="15.867" y2="45.847" width="0.1778" layer="16"/>
-<wire x1="1.27" y1="49.53" x2="3.429" y2="51.689" width="0.1778" layer="1"/>
+<wire x1="1.27" y1="49.53" x2="2.794" y2="51.054" width="0.1778" layer="1"/>
 <wire x1="16.891" y1="46.228" x2="16.8063" y2="46.228" width="0.1778" layer="1"/>
 <wire x1="16.8063" y1="46.228" x2="16.2179" y2="46.8164" width="0.1778" layer="1"/>
-<wire x1="16.2179" y1="51.3461" x2="16.2179" y2="46.8164" width="0.1778" layer="1"/>
-<wire x1="3.429" y1="51.689" x2="15.875" y2="51.689" width="0.1778" layer="1"/>
-<wire x1="15.875" y1="51.689" x2="16.2179" y2="51.3461" width="0.1778" layer="1"/>
+<wire x1="16.2179" y1="50.4571" x2="16.2179" y2="46.8164" width="0.1778" layer="1"/>
+<wire x1="2.794" y1="51.054" x2="15.621" y2="51.054" width="0.1778" layer="1"/>
+<wire x1="15.621" y1="51.054" x2="16.2179" y2="50.4571" width="0.1778" layer="1"/>
 <wire x1="16.891" y1="46.228" x2="16.002" y2="45.339" width="0.1778" layer="2"/>
 <wire x1="16.002" y1="45.339" x2="16.002" y2="8.89" width="0.1778" layer="2"/>
 <wire x1="16.002" y1="8.89" x2="14.986" y2="7.874" width="0.1778" layer="2"/>
@@ -10466,6 +10542,9 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="12.7" y1="21.463" x2="12.7" y2="23.622" width="0.1778" layer="1"/>
 <wire x1="11.938" y1="23.622" x2="12.7" y2="23.622" width="0.1778" layer="1"/>
 </signal>
+<signal name="N$27">
+<via x="12.7" y="31.75" extent="1-16" drill="0.3048"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8FF0000"/>
@@ -10480,12 +10559,12 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <approved hash="19,1,2d1c2dd87fae7f6a"/>
 <approved hash="19,1,a453a753d325d025"/>
 <approved hash="19,1,2f1e2fdbf9adf968"/>
-<approved hash="19,1,5cd25a91a691a6d2"/>
-<approved hash="19,16,e190e1227c9d7c91"/>
-<approved hash="19,16,653c66d496d4953c"/>
-<approved hash="19,16,c3f54284468645f2"/>
-<approved hash="19,16,51d45913c212c4d7"/>
-<approved hash="19,16,5eb49c40ba2b1a15"/>
+<approved hash="19,1,c240c26f3e6f3e40"/>
+<approved hash="19,16,38083b9113911008"/>
+<approved hash="19,16,f3c6f3e297e297c6"/>
+<approved hash="19,16,023e016d016d023e"/>
+<approved hash="19,16,13ff1394f794f7ff"/>
+<approved hash="19,16,3e138aee682870a8"/>
 </errors>
 </board>
 </drawing>
