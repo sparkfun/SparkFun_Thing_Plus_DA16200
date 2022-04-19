@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -24638,7 +24638,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="WP" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="MEAS'" library="SparkFun-Jumpers" deviceset="JUMPER-COMBO_2_NC_TRACE" device=""/>
+<part name="MEAS" library="SparkFun-Jumpers" deviceset="JUMPER-COMBO_2_NC_TRACE" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 <part name="R20" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
@@ -24678,7 +24678,7 @@ SCL lines</text>
 <wire x1="330.2" y1="63.5" x2="330.2" y2="137.16" width="0.2032" layer="97" style="longdash"/>
 <wire x1="330.2" y1="137.16" x2="330.2" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="121.92" y1="193.04" x2="261.62" y2="193.04" width="0.1524" layer="97" style="longdash"/>
-<text x="40.64" y="180.34" size="2.54" layer="94" font="vector" align="center">uSD Connector</text>
+<text x="40.64" y="180.34" size="2.54" layer="94" font="vector" align="center">uSD Socket</text>
 <wire x1="261.62" y1="193.04" x2="261.62" y2="279.4" width="0.2032" layer="97" style="longdash"/>
 <text x="294.894" y="187.706" size="2.54" layer="94" font="vector" align="center">Debug Header</text>
 <text x="281.94" y="127" size="2.54" layer="94" font="vector" align="center">Power LED</text>
@@ -25070,7 +25070,7 @@ from power.</text>
 <instance part="GND26" gate="1" x="96.52" y="10.16" smashed="yes">
 <attribute name="VALUE" x="96.52" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="MEAS'" gate="JP1" x="55.88" y="236.22" smashed="yes">
+<instance part="MEAS" gate="JP1" x="55.88" y="236.22" smashed="yes">
 <attribute name="NAME" x="55.88" y="239.014" size="1.778" layer="95" font="vector" align="center"/>
 </instance>
 <instance part="LOGO1" gate="G$1" x="419.1" y="48.26" smashed="yes"/>
@@ -25602,7 +25602,7 @@ from power.</text>
 <junction x="48.26" y="231.14"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="MEAS'" gate="JP1" pin="1"/>
+<pinref part="MEAS" gate="JP1" pin="1"/>
 <wire x1="48.26" y1="236.22" x2="50.8" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -26098,7 +26098,7 @@ from power.</text>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="MEAS'" gate="JP1" pin="2"/>
+<pinref part="MEAS" gate="JP1" pin="2"/>
 <pinref part="U7" gate="G$1" pin="IN"/>
 <wire x1="60.96" y1="236.22" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
 </segment>

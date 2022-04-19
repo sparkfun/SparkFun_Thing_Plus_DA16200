@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -9498,7 +9498,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <attribute name="NAME" x="8.509" y="41.021" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="6.223" y="41.021" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
 </element>
-<element name="MEAS'" library="SparkFun-Jumpers" package="COMBO-JUMPER_2_NC_TRACE" value="JUMPER-COMBO_2_NC_TRACE" x="11.43" y="23.622" smashed="yes">
+<element name="MEAS" library="SparkFun-Jumpers" package="COMBO-JUMPER_2_NC_TRACE" value="JUMPER-COMBO_2_NC_TRACE" x="11.43" y="23.622" smashed="yes">
 <attribute name="NAME" x="11.43" y="24.765" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="11.43" y="22.479" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
@@ -10154,8 +10154,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <contactref element="Q1" pad="2"/>
 <contactref element="R16" pad="2"/>
 <contactref element="C8" pad="1"/>
-<contactref element="MEAS'" pad="3"/>
-<contactref element="MEAS'" pad="1"/>
+<contactref element="MEAS" pad="3"/>
+<contactref element="MEAS" pad="1"/>
 <wire x1="11.692" y1="19.304" x2="11.684" y2="19.312" width="0.1778" layer="1"/>
 <wire x1="11.684" y1="19.312" x2="11.684" y2="20.455" width="0.1778" layer="1"/>
 <wire x1="11.684" y1="20.455" x2="10.922" y2="20.455" width="0.1778" layer="1"/>
@@ -10685,8 +10685,8 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="12.93" y1="37.87" x2="12.93" y2="36.24" width="0.1778" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="MEAS'" pad="2"/>
-<contactref element="MEAS'" pad="4"/>
+<contactref element="MEAS" pad="2"/>
+<contactref element="MEAS" pad="4"/>
 <contactref element="U7" pad="1"/>
 <wire x1="13.9399" y1="21.27" x2="12.893" y2="21.27" width="0.1778" layer="1"/>
 <wire x1="12.893" y1="21.27" x2="12.7" y2="21.463" width="0.1778" layer="1"/>
