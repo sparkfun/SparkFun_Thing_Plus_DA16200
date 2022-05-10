@@ -24701,7 +24701,7 @@ input current from either USB or
 LiPo battery.</text>
 <wire x1="76.2" y1="66.04" x2="147.32" y2="66.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="66.04" x2="147.32" y2="0" width="0.2032" layer="97" style="longdash"/>
-<text x="114.3" y="60.96" size="2.54" layer="94" font="vector" align="center">External Flash</text>
+<text x="114.3" y="60.96" size="2.54" layer="94" font="vector" align="center">External Flash - DNP</text>
 <text x="223.52" y="223.52" size="2.032" layer="97" font="vector" rot="MR0" align="top-right">Cut and resolder
 CHG jumper to 
 change the charging
@@ -24709,6 +24709,7 @@ current.</text>
 <text x="287.02" y="111.76" size="1.778" layer="97" font="vector">Cut LED jumper
 to remove LED
 from power.</text>
+<text x="111.76" y="15.24" size="1.778" layer="97" font="vector">DNP</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
