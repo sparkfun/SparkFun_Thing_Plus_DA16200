@@ -46,15 +46,15 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -9582,10 +9582,10 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 </element>
 <element name="U$4" library="output" package="G0" value="" x="18.542" y="28.067" smashed="yes"/>
 <element name="U$9" library="output" package="3V0" value="" x="18.034" y="35.814" smashed="yes"/>
-<element name="J1" library="SparkFun-Connectors" package="MICROSD_TINY" value="MICRO-SDFRICTION" x="43.18" y="7.62" smashed="yes" rot="R270">
-<attribute name="NAME" x="43.18" y="10.16" size="0.8128" layer="25" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-13500" x="43.18" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="41.91" y="10.16" size="0.8128" layer="27" rot="R270"/>
+<element name="J1" library="SparkFun-Connectors" package="MICROSD_TINY" value="MICRO-SDFRICTION" x="39.37" y="12.7" smashed="yes" rot="MR90">
+<attribute name="NAME" x="39.37" y="10.16" size="0.8128" layer="26" rot="MR90"/>
+<attribute name="PROD_ID" value="CONN-13500" x="39.37" y="12.7" size="1.778" layer="28" font="vector" ratio="15" rot="MR90" display="off"/>
+<attribute name="VALUE" x="38.1" y="10.16" size="0.8128" layer="28" rot="MR90"/>
 </element>
 </elements>
 <signals>
@@ -9670,7 +9670,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="10.557" y1="15.712" x2="12.057" y2="15.712" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="9.898" x2="9.652" y2="15.113" width="0" layer="19" extent="1-1"/>
 <wire x1="19.042" y1="8.898" x2="21.59" y2="16.51" width="0" layer="19" extent="16-16"/>
-<wire x1="39.33" y1="7.37" x2="19.6977" y2="7.239" width="0" layer="19" extent="1-16"/>
+<wire x1="35.52" y1="12.95" x2="19.6977" y2="7.239" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GND">
 <polygon width="0.2032" layer="16" rank="2">
@@ -9979,13 +9979,13 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="3.048" y1="7.493" x2="3.81" y2="6.35" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="5.08" x2="3.81" y2="6.35" width="0" layer="19" extent="1-1"/>
 <wire x1="5.461" y1="3.048" x2="5.08" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="39.33" y1="9.57" x2="21.844" y2="9.271" width="0" layer="19" extent="1-1"/>
-<wire x1="42.135" y1="12.945" x2="39.33" y2="9.57" width="0" layer="19" extent="1-1"/>
-<wire x1="45.32" y1="12.945" x2="42.135" y2="12.945" width="0" layer="19" extent="1-1"/>
-<wire x1="46.565" y1="9.765" x2="45.32" y2="12.945" width="0" layer="19" extent="1-1"/>
-<wire x1="46.565" y1="5.575" x2="46.565" y2="9.765" width="0" layer="19" extent="1-1"/>
-<wire x1="45.89" y1="2.27" x2="46.565" y2="5.575" width="0" layer="19" extent="1-1"/>
-<wire x1="43.28" y1="2.27" x2="45.89" y2="2.27" width="0" layer="19" extent="1-1"/>
+<wire x1="35.52" y1="10.75" x2="21.844" y2="9.271" width="0" layer="19" extent="1-1"/>
+<wire x1="38.325" y1="7.375" x2="35.52" y2="10.75" width="0" layer="19" extent="1-1"/>
+<wire x1="41.51" y1="7.375" x2="38.325" y2="7.375" width="0" layer="19" extent="1-1"/>
+<wire x1="42.755" y1="10.555" x2="41.51" y2="7.375" width="0" layer="19" extent="1-1"/>
+<wire x1="42.755" y1="14.745" x2="42.755" y2="10.555" width="0" layer="19" extent="1-1"/>
+<wire x1="42.08" y1="18.05" x2="42.755" y2="14.745" width="0" layer="19" extent="1-1"/>
+<wire x1="39.47" y1="18.05" x2="42.08" y2="18.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V_USB">
 <contactref element="D2" pad="A"/>
@@ -10169,7 +10169,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="19.177" y1="14.224" x2="18.923" y2="13.97" width="0.1778" layer="1"/>
 <wire x1="19.177" y1="14.224" x2="19.685" y2="14.224" width="0.1778" layer="1"/>
 <contactref element="J1" pad="1"/>
-<wire x1="21.59" y1="13.97" x2="39.33" y2="4.07" width="0" layer="19" extent="1-16"/>
+<wire x1="21.59" y1="13.97" x2="35.52" y2="16.25" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="GPIOC6">
 <contactref element="U1" pad="11"/>
@@ -10286,7 +10286,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="20.066" y1="49.53" x2="21.59" y2="49.53" width="0.1778" layer="1"/>
 <wire x1="19.685" y1="45.272" x2="19.685" y2="49.149" width="0.1778" layer="1"/>
 <contactref element="J1" pad="3"/>
-<wire x1="39.33" y1="6.27" x2="18.923" y2="44.51" width="0" layer="19" extent="1-1"/>
+<wire x1="35.52" y1="14.05" x2="18.923" y2="44.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="U1RXI/SD_CLK">
 <contactref element="U1" pad="28"/>
@@ -10297,7 +10297,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="20.574" y1="46.99" x2="21.59" y2="46.99" width="0.1778" layer="1"/>
 <wire x1="20.066" y1="44.018" x2="20.066" y2="46.482" width="0.1778" layer="1"/>
 <contactref element="J1" pad="5"/>
-<wire x1="39.33" y1="8.47" x2="19.558" y2="43.51" width="0" layer="19" extent="1-1"/>
+<wire x1="35.52" y1="11.85" x2="19.558" y2="43.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_POCI/SD_D0">
 <contactref element="J2" pad="16"/>
@@ -10316,7 +10316,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="19.812" y1="38.989" x2="19.812" y2="12.954" width="0.1778" layer="16"/>
 <wire x1="19.812" y1="38.989" x2="19.304" y2="39.497" width="0.1778" layer="16"/>
 <contactref element="J1" pad="7"/>
-<wire x1="19.812" y1="12.954" x2="39.33" y2="10.67" width="0" layer="19" extent="1-16"/>
+<wire x1="19.812" y1="12.954" x2="35.52" y2="9.65" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_PICO/SD_D1">
 <contactref element="J2" pad="17"/>
@@ -10338,7 +10338,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="19.939" y1="40.507" x2="19.936" y2="40.51" width="0.1778" layer="1"/>
 <wire x1="17.399" y1="14.605" x2="19.304" y2="16.51" width="0.1778" layer="16"/>
 <contactref element="J1" pad="8"/>
-<wire x1="19.304" y1="16.51" x2="39.33" y2="11.77" width="0" layer="19" extent="1-16"/>
+<wire x1="19.304" y1="16.51" x2="35.52" y2="8.55" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_CSB/SD_D3">
 <contactref element="J2" pad="3"/>
@@ -10358,7 +10358,7 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="9.652" y1="46.355" x2="9.271" y2="45.974" width="0.1778" layer="16"/>
 <wire x1="8.89" y1="45.974" x2="9.271" y2="45.974" width="0.1778" layer="16"/>
 <contactref element="J1" pad="2"/>
-<wire x1="39.33" y1="5.17" x2="14.7701" y2="40.386" width="0" layer="19" extent="1-16"/>
+<wire x1="35.52" y1="15.15" x2="14.7701" y2="40.386" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SD_CS">
 <contactref element="J6" pad="CS/DAT3"/>
