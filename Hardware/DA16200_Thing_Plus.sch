@@ -24641,6 +24641,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GPIOC7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3"/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="MICRO-SD" device="FRICTION"/>
+<part name="CHG_LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -24787,8 +24788,8 @@ to the datasheet for more information.</text>
 <instance part="GND21" gate="1" x="91.44" y="220.98" smashed="yes">
 <attribute name="VALUE" x="91.44" y="220.726" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND4" gate="1" x="149.86" y="228.6" smashed="yes">
-<attribute name="VALUE" x="149.86" y="228.346" size="1.778" layer="96" align="top-center"/>
+<instance part="GND4" gate="1" x="134.62" y="228.6" smashed="yes">
+<attribute name="VALUE" x="134.62" y="228.346" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND9" gate="1" x="190.5" y="233.68" smashed="yes">
 <attribute name="VALUE" x="190.5" y="233.426" size="1.778" layer="96" align="top-center"/>
@@ -24814,8 +24815,8 @@ to the datasheet for more information.</text>
 <instance part="SUPPLY35" gate="G$1" x="20.32" y="243.84" smashed="yes">
 <attribute name="VALUE" x="20.32" y="246.634" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY22" gate="G$1" x="149.86" y="246.38" smashed="yes">
-<attribute name="VALUE" x="149.86" y="249.174" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY22" gate="G$1" x="134.62" y="246.38" smashed="yes">
+<attribute name="VALUE" x="134.62" y="249.174" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY23" gate="G$1" x="299.72" y="243.84" smashed="yes">
 <attribute name="VALUE" x="299.72" y="246.634" size="1.778" layer="96" align="bottom-center"/>
@@ -24875,17 +24876,17 @@ to the datasheet for more information.</text>
 <attribute name="NAME" x="92.964" y="231.521" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="92.964" y="226.441" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R2" gate="G$1" x="157.48" y="236.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="155.956" y="236.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="159.004" y="236.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R2" gate="G$1" x="154.94" y="226.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="154.94" y="224.536" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="154.94" y="227.584" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="312.42" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="310.896" y="86.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="313.944" y="86.36" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="C7" gate="G$1" x="149.86" y="236.22" smashed="yes">
-<attribute name="NAME" x="144.272" y="238.506" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="142.24" y="233.934" size="1.778" layer="96" font="vector"/>
+<instance part="C7" gate="G$1" x="134.62" y="236.22" smashed="yes">
+<attribute name="NAME" x="129.032" y="238.506" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="127" y="233.934" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="C10" gate="G$1" x="226.06" y="236.22" smashed="yes">
 <attribute name="NAME" x="227.584" y="239.141" size="1.778" layer="95" font="vector"/>
@@ -25066,6 +25067,9 @@ to the datasheet for more information.</text>
 <attribute name="NAME" x="106.68" y="61.468" size="1.778" layer="95"/>
 <attribute name="VALUE" x="106.68" y="33.02" size="1.778" layer="96"/>
 </instance>
+<instance part="CHG_LED" gate="G$1" x="147.32" y="233.68" smashed="yes" rot="R90">
+<attribute name="NAME" x="144.272" y="233.68" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -25193,7 +25197,7 @@ to the datasheet for more information.</text>
 <pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="149.86" y1="231.14" x2="149.86" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="231.14" x2="134.62" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
@@ -25352,17 +25356,17 @@ to the datasheet for more information.</text>
 <junction x="25.4" y="241.3"/>
 </segment>
 <segment>
-<wire x1="167.64" y1="243.84" x2="157.48" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="243.84" x2="149.86" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="243.84" x2="149.86" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="243.84" x2="149.86" y2="241.3" width="0.1524" layer="91"/>
-<junction x="149.86" y="243.84"/>
-<wire x1="157.48" y1="241.3" x2="157.48" y2="243.84" width="0.1524" layer="91"/>
-<junction x="157.48" y="243.84"/>
+<wire x1="167.64" y1="243.84" x2="147.32" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="243.84" x2="134.62" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="243.84" x2="134.62" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="243.84" x2="134.62" y2="241.3" width="0.1524" layer="91"/>
+<junction x="134.62" y="243.84"/>
 <pinref part="SUPPLY22" gate="G$1" pin="V_USB"/>
 <pinref part="U3" gate="G$1" pin="VIN"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="CHG_LED" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="238.76" x2="147.32" y2="243.84" width="0.1524" layer="91"/>
+<junction x="147.32" y="243.84"/>
 </segment>
 <segment>
 <wire x1="299.72" y1="241.3" x2="299.72" y2="243.84" width="0.1524" layer="91"/>
@@ -25385,10 +25389,9 @@ to the datasheet for more information.</text>
 </net>
 <net name="N$17" class="0">
 <segment>
-<wire x1="165.1" y1="226.06" x2="157.48" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="226.06" x2="160.02" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="165.1" y1="228.6" x2="165.1" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="226.06" x2="157.48" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -25995,6 +25998,14 @@ to the datasheet for more information.</text>
 <pinref part="MEAS" gate="JP1" pin="2"/>
 <pinref part="U7" gate="G$1" pin="IN"/>
 <wire x1="60.96" y1="236.22" x2="66.04" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="226.06" x2="147.32" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="CHG_LED" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="226.06" x2="147.32" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
