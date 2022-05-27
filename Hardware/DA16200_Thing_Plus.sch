@@ -24620,6 +24620,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-SMD-AYZ0202"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="MICRO-SD" device="FRICTION"/>
 <part name="CHG_LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="DA_MEAS" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="CH_PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -24682,6 +24684,10 @@ pin connected to 3.3V for normal
 operation. Flip the switch to connect 
 to GND and enter sleep mode 1. Refer 
 to the datasheet for more information.</text>
+<text x="203.2" y="132.08" size="1.778" layer="97" font="vector">Cut DA_MEAS jumper
+to measure the current
+draw from just the
+DA16200 module.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -24896,8 +24902,8 @@ to the datasheet for more information.</text>
 <attribute name="NAME" x="157.48" y="125.73" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.48" y="59.69" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="198.12" y="127" smashed="yes">
-<attribute name="VALUE" x="198.12" y="129.794" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="198.12" y="137.16" smashed="yes">
+<attribute name="VALUE" x="198.12" y="139.954" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND3" gate="1" x="198.12" y="55.88" smashed="yes">
 <attribute name="VALUE" x="198.12" y="55.626" size="1.778" layer="96" align="top-center"/>
@@ -24921,8 +24927,8 @@ to the datasheet for more information.</text>
 <instance part="GND6" gate="1" x="375.92" y="223.52" smashed="yes">
 <attribute name="VALUE" x="375.92" y="223.266" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="375.92" y="246.38" smashed="yes">
-<attribute name="VALUE" x="375.92" y="249.174" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="375.92" y="259.08" smashed="yes">
+<attribute name="VALUE" x="375.92" y="261.874" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="C1" gate="G$1" x="421.64" y="236.22" smashed="yes">
 <attribute name="NAME" x="423.164" y="239.141" size="1.778" layer="95" font="vector"/>
@@ -25048,6 +25054,12 @@ to the datasheet for more information.</text>
 <instance part="CHG_LED" gate="G$1" x="147.32" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="144.272" y="233.68" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
+<instance part="DA_MEAS" gate="G$1" x="198.12" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="190.5" y="129.032" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
+</instance>
+<instance part="CH_PWR" gate="G$1" x="375.92" y="251.46" smashed="yes" rot="R90">
+<attribute name="NAME" x="372.872" y="251.46" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -25079,34 +25091,10 @@ to the datasheet for more information.</text>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VDD_DIO2"/>
-<wire x1="195.58" y1="116.84" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="116.84" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VBAT_3V3"/>
-<wire x1="198.12" y1="119.38" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="121.92" x2="198.12" y2="127" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
-<junction x="198.12" y="121.92"/>
-<pinref part="U1" gate="G$1" pin="VDD_DIO1"/>
-<wire x1="195.58" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
-<junction x="198.12" y="119.38"/>
-<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="3V3"/>
 <wire x1="398.78" y1="93.98" x2="401.32" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="401.32" y1="93.98" x2="401.32" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="U2" gate="U1" pin="V3"/>
-<wire x1="378.46" y1="241.3" x2="375.92" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="241.3" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="U2" gate="U1" pin="VCC"/>
-<wire x1="375.92" y1="243.84" x2="375.92" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="243.84" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
-<junction x="375.92" y="243.84"/>
-<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -25145,6 +25133,16 @@ to the datasheet for more information.</text>
 <wire x1="104.14" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="58.42" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<pinref part="DA_MEAS" gate="G$1" pin="2"/>
+<wire x1="198.12" y1="137.16" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CH_PWR" gate="G$1" pin="2"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+<wire x1="375.92" y1="256.54" x2="375.92" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -25984,6 +25982,34 @@ to the datasheet for more information.</text>
 <wire x1="149.86" y1="226.06" x2="147.32" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="CHG_LED" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="226.06" x2="147.32" y2="228.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="VDD_DIO2"/>
+<wire x1="195.58" y1="116.84" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="116.84" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VBAT_3V3"/>
+<wire x1="198.12" y1="119.38" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="121.92" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="VDD_DIO1"/>
+<wire x1="195.58" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+<junction x="198.12" y="119.38"/>
+<pinref part="DA_MEAS" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="124.46" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<junction x="198.12" y="121.92"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U2" gate="U1" pin="V3"/>
+<wire x1="378.46" y1="241.3" x2="375.92" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="241.3" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U1" pin="VCC"/>
+<wire x1="378.46" y1="243.84" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
+<pinref part="CH_PWR" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="246.38" x2="375.92" y2="243.84" width="0.1524" layer="91"/>
+<junction x="375.92" y="243.84"/>
 </segment>
 </net>
 </nets>
