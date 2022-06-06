@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -17,7 +17,7 @@
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
 <layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -9900,7 +9900,6 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <wire x1="5.08" y1="9.898" x2="3.945" y2="9.898" width="0.3048" layer="1"/>
 <wire x1="3.945" y1="9.898" x2="3.937" y2="9.906" width="0.3048" layer="1"/>
 <via x="3.937" y="9.906" extent="1-16" drill="0.3048"/>
-<wire x1="19.042" y1="8.898" x2="19.05" y2="8.89" width="0.3048" layer="16"/>
 <via x="19.05" y="8.89" extent="1-16" drill="0.3048"/>
 <wire x1="19.6977" y1="7.239" x2="19.6977" y2="8.2423" width="0.3048" layer="16"/>
 <wire x1="19.6977" y1="8.2423" x2="19.05" y2="8.89" width="0.3048" layer="16"/>
@@ -10818,20 +10817,20 @@ These design rules are smaller than the &lt;a href=&quot;https://jlcpcb.com/capa
 <errors>
 <approved hash="19,1,2d1c2dd87fae7f6a"/>
 <approved hash="19,1,a453a753d325d025"/>
-<approved hash="19,16,38083b9113911008"/>
-<approved hash="19,16,f3c6f3e297e297c6"/>
-<approved hash="19,16,023e016d016d023e"/>
-<approved hash="19,16,13ff1394f794f7ff"/>
-<approved hash="19,16,3e138aee682870a8"/>
-<approved hash="19,1,d643d66332633243"/>
 <approved hash="19,1,d618d6db002d00ee"/>
 <approved hash="19,1,2e012de2fb94f877"/>
 <approved hash="19,1,2c032fe17d977e75"/>
 <approved hash="19,1,ac3b93d841ae7e4d"/>
 <approved hash="19,1,ae3991dbc7adf84f"/>
-<approved hash="19,16,53c25302770277c2"/>
-<approved hash="19,16,37c437e013e013c4"/>
-<approved hash="19,16,5645566172617245"/>
+<approved hash="19,1,40dd42919e919edd"/>
+<approved hash="19,16,5eb49c40ba2b1a15"/>
+<approved hash="19,16,c3f54284468645f2"/>
+<approved hash="19,16,51d45913c212c4d7"/>
+<approved hash="19,16,96569411b810b855"/>
+<approved hash="19,16,17d715133a133ad7"/>
+<approved hash="19,16,e190e1227c9d7c91"/>
+<approved hash="19,16,653c66d496d4953c"/>
+<approved hash="19,16,0ea511a325a124a5"/>
 </errors>
 </board>
 </drawing>
