@@ -24308,8 +24308,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="D5" library="SparkFun-IC-Power" deviceset="PRTR5V0U2" device="F"/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R11" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
-<part name="R12" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27OHM"/>
+<part name="R11" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
 <part name="R13" library="SparkFun-Resistors" deviceset="200OHM" device="-0402T-1/16W-1%" value="200"/>
 <part name="CHG" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
@@ -24330,6 +24330,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="CHG_LED" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="DA_MEAS" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="CH_PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
+<part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24472,8 +24473,8 @@ DA16200 module.</text>
 <instance part="GND39" gate="1" x="238.76" y="236.22" smashed="yes">
 <attribute name="VALUE" x="238.76" y="235.966" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND8" gate="1" x="299.72" y="208.28" smashed="yes">
-<attribute name="VALUE" x="299.72" y="208.026" size="1.778" layer="96" align="top-center"/>
+<instance part="GND8" gate="1" x="299.72" y="210.82" smashed="yes">
+<attribute name="VALUE" x="299.72" y="210.566" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND7" gate="1" x="312.42" y="76.2" smashed="yes">
 <attribute name="VALUE" x="312.42" y="75.946" size="1.778" layer="96" align="top-center"/>
@@ -24734,6 +24735,9 @@ DA16200 module.</text>
 <instance part="CH_PWR" gate="G$1" x="375.92" y="251.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="372.872" y="251.46" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
+<instance part="GND2" gate="1" x="304.8" y="210.82" smashed="yes">
+<attribute name="VALUE" x="304.8" y="210.566" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24854,14 +24858,9 @@ DA16200 module.</text>
 </segment>
 <segment>
 <wire x1="299.72" y1="226.06" x2="299.72" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="213.36" x2="299.72" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="226.06" x2="297.18" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="J5" gate="J1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="SHLD" gate="G$1" pin="1"/>
-<wire x1="304.8" y1="215.9" x2="304.8" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="213.36" x2="299.72" y2="213.36" width="0.1524" layer="91"/>
-<junction x="299.72" y="213.36"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="1"/>
@@ -24961,6 +24960,11 @@ DA16200 module.</text>
 <wire x1="139.7" y1="121.92" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="121.92" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SHLD" gate="G$1" pin="1"/>
+<wire x1="304.8" y1="215.9" x2="304.8" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V_USB" class="0">
