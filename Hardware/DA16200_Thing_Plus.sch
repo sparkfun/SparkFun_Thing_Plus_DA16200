@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -24343,7 +24343,7 @@ R_PROG=2k : I_CHG=500mA
 R_PROG=10k: I_CHG=100mA</text>
 <text x="60.96" y="274.32" size="2.54" layer="94" font="vector" align="center">Voltage Regulator and Battery Charger</text>
 <text x="185.42" y="274.32" size="2.54" layer="94" font="vector" align="center">Lithium-Polymer Battery Charger (1-cell)</text>
-<text x="76.2" y="215.9" size="1.778" layer="97" font="vector" align="center">600mA out
+<text x="76.2" y="215.9" size="1.778" layer="97" font="vector" align="center">700mA out
 VIN: 2.5V-6V</text>
 <wire x1="0" y1="193.04" x2="121.92" y2="193.04" width="0.2032" layer="97" style="longdash"/>
 <wire x1="261.62" y1="193.04" x2="330.2" y2="193.04" width="0.2032" layer="97" style="longdash"/>
@@ -24464,8 +24464,8 @@ DA16200 module.</text>
 <instance part="GND9" gate="1" x="190.5" y="233.68" smashed="yes">
 <attribute name="VALUE" x="190.5" y="233.426" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND11" gate="1" x="203.2" y="215.9" smashed="yes">
-<attribute name="VALUE" x="203.2" y="215.646" size="1.778" layer="96" align="top-center"/>
+<instance part="GND11" gate="1" x="195.58" y="215.9" smashed="yes">
+<attribute name="VALUE" x="195.58" y="215.646" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="GND12" gate="1" x="226.06" y="228.6" smashed="yes">
 <attribute name="VALUE" x="226.06" y="228.346" size="1.778" layer="96" align="top-center"/>
@@ -24562,9 +24562,9 @@ DA16200 module.</text>
 <attribute name="NAME" x="227.584" y="239.141" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="227.584" y="234.061" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R6" gate="G$1" x="203.2" y="226.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="201.676" y="226.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="204.724" y="226.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R6" gate="G$1" x="195.58" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="194.056" y="226.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="197.104" y="226.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="R8" gate="G$1" x="281.94" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="280.416" y="86.36" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -24681,15 +24681,15 @@ DA16200 module.</text>
 <attribute name="NAME" x="295.656" y="30.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="298.704" y="30.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="CHG" gate="G$1" x="210.82" y="233.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="207.518" y="237.236" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
+<instance part="CHG" gate="G$1" x="203.2" y="233.68" smashed="yes" rot="R270">
+<attribute name="NAME" x="199.898" y="237.236" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
-<instance part="R14" gate="G$1" x="218.44" y="226.06" smashed="yes" rot="R90">
-<attribute name="NAME" x="216.916" y="226.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="219.964" y="226.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R14" gate="G$1" x="210.82" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="209.296" y="226.06" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="212.344" y="226.06" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="GND22" gate="1" x="218.44" y="215.9" smashed="yes">
-<attribute name="VALUE" x="218.44" y="215.646" size="1.778" layer="96" align="top-center"/>
+<instance part="GND22" gate="1" x="210.82" y="215.9" smashed="yes">
+<attribute name="VALUE" x="210.82" y="215.646" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="R18" gate="G$1" x="33.02" y="241.3" smashed="yes">
 <attribute name="NAME" x="33.02" y="242.824" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -24841,7 +24841,7 @@ DA16200 module.</text>
 <pinref part="U3" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="220.98" x2="203.2" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="220.98" x2="195.58" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
@@ -24942,7 +24942,7 @@ DA16200 module.</text>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="220.98" x2="218.44" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="220.98" x2="210.82" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -25033,9 +25033,9 @@ DA16200 module.</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PROG"/>
-<wire x1="187.96" y1="241.3" x2="210.82" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="241.3" x2="203.2" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="CHG" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="241.3" x2="210.82" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="241.3" x2="203.2" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
@@ -25292,7 +25292,7 @@ DA16200 module.</text>
 <junction x="218.44" y="96.52"/>
 </segment>
 </net>
-<net name="SD_CS" class="0">
+<net name="GPIOA10" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="GPIO5"/>
 <wire x1="373.38" y1="121.92" x2="363.22" y2="121.92" width="0.1524" layer="91"/>
@@ -25498,17 +25498,17 @@ DA16200 module.</text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="CHG" gate="G$1" pin="3"/>
-<wire x1="205.74" y1="233.68" x2="203.2" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="233.68" x2="195.58" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="233.68" x2="203.2" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="233.68" x2="195.58" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="CHG" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="233.68" x2="218.44" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="233.68" x2="210.82" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="233.68" x2="218.44" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="233.68" x2="210.82" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
