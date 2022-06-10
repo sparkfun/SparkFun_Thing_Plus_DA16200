@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10,8 +10,8 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="gndvert" color="10" fill="7" visible="no" active="yes"/>
-<layer number="15" name="pwrhorz" color="4" fill="7" visible="no" active="yes"/>
+<layer number="2" name="gndvert" color="10" fill="7" visible="yes" active="yes"/>
+<layer number="15" name="pwrhorz" color="4" fill="7" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -7980,192 +7980,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.01" y="0.35"/>
 </polygon>
 </package>
-<package name="A20">
-<polygon width="0.01" layer="21">
-<vertex x="0.94" y="0.35"/>
-<vertex x="0.9" y="0.37"/>
-<vertex x="0.85" y="0.36"/>
-<vertex x="0.81" y="0.33"/>
-<vertex x="0.79" y="0.29"/>
-<vertex x="0.54" y="-0.22"/>
-<vertex x="0.52" y="-0.27"/>
-<vertex x="0.54" y="-0.31"/>
-<vertex x="0.59" y="-0.34"/>
-<vertex x="0.64" y="-0.36"/>
-<vertex x="0.68" y="-0.33"/>
-<vertex x="0.75" y="-0.19"/>
-<vertex x="1" y="-0.19"/>
-<vertex x="0.94" y="-0.05"/>
-<vertex x="0.84" y="-0.05"/>
-<vertex x="0.83" y="-0.03"/>
-<vertex x="0.87" y="0.07"/>
-<vertex x="0.88" y="0.09"/>
-<vertex x="0.94" y="-0.05"/>
-<vertex x="1" y="-0.19"/>
-<vertex x="1.03" y="-0.23"/>
-<vertex x="1.08" y="-0.32"/>
-<vertex x="1.11" y="-0.35"/>
-<vertex x="1.16" y="-0.35"/>
-<vertex x="1.22" y="-0.32"/>
-<vertex x="1.24" y="-0.28"/>
-<vertex x="1.23" y="-0.24"/>
-<vertex x="0.96" y="0.32"/>
-</polygon>
-<polygon width="0.01" layer="21">
-<vertex x="1.87" y="-0.18"/>
-<vertex x="1.72" y="-0.18"/>
-<vertex x="1.71" y="-0.17"/>
-<vertex x="1.75" y="-0.15"/>
-<vertex x="1.79" y="-0.13"/>
-<vertex x="1.83" y="-0.09"/>
-<vertex x="1.87" y="-0.05"/>
-<vertex x="1.9" y="-0.01"/>
-<vertex x="1.92" y="0.04"/>
-<vertex x="1.92" y="0.09"/>
-<vertex x="1.92" y="0.14"/>
-<vertex x="1.91" y="0.19"/>
-<vertex x="1.89" y="0.23"/>
-<vertex x="1.87" y="0.27"/>
-<vertex x="1.83" y="0.31"/>
-<vertex x="1.79" y="0.34"/>
-<vertex x="1.75" y="0.36"/>
-<vertex x="1.7" y="0.37"/>
-<vertex x="1.64" y="0.37"/>
-<vertex x="1.59" y="0.36"/>
-<vertex x="1.55" y="0.35"/>
-<vertex x="1.5" y="0.32"/>
-<vertex x="1.47" y="0.28"/>
-<vertex x="1.44" y="0.24"/>
-<vertex x="1.42" y="0.2"/>
-<vertex x="1.41" y="0.15"/>
-<vertex x="1.4" y="0.1"/>
-<vertex x="1.41" y="0.05"/>
-<vertex x="1.44" y="0.03"/>
-<vertex x="1.51" y="0.02"/>
-<vertex x="1.55" y="0.03"/>
-<vertex x="1.57" y="0.07"/>
-<vertex x="1.58" y="0.12"/>
-<vertex x="1.6" y="0.17"/>
-<vertex x="1.64" y="0.2"/>
-<vertex x="1.69" y="0.19"/>
-<vertex x="1.73" y="0.17"/>
-<vertex x="1.75" y="0.12"/>
-<vertex x="1.74" y="0.08"/>
-<vertex x="1.71" y="0.03"/>
-<vertex x="1.68" y="0"/>
-<vertex x="1.64" y="-0.03"/>
-<vertex x="1.51" y="-0.11"/>
-<vertex x="1.47" y="-0.14"/>
-<vertex x="1.43" y="-0.18"/>
-<vertex x="1.41" y="-0.22"/>
-<vertex x="1.4" y="-0.27"/>
-<vertex x="1.42" y="-0.32"/>
-<vertex x="1.46" y="-0.35"/>
-<vertex x="1.51" y="-0.36"/>
-<vertex x="1.86" y="-0.36"/>
-<vertex x="1.91" y="-0.35"/>
-<vertex x="1.95" y="-0.33"/>
-<vertex x="1.96" y="-0.28"/>
-<vertex x="1.95" y="-0.22"/>
-<vertex x="1.92" y="-0.19"/>
-</polygon>
-</package>
-<package name="A30">
-<polygon width="0.01" layer="21">
-<vertex x="0.94" y="0.35"/>
-<vertex x="0.9" y="0.37"/>
-<vertex x="0.85" y="0.36"/>
-<vertex x="0.81" y="0.33"/>
-<vertex x="0.79" y="0.29"/>
-<vertex x="0.54" y="-0.22"/>
-<vertex x="0.52" y="-0.27"/>
-<vertex x="0.54" y="-0.31"/>
-<vertex x="0.59" y="-0.34"/>
-<vertex x="0.64" y="-0.36"/>
-<vertex x="0.68" y="-0.33"/>
-<vertex x="0.75" y="-0.19"/>
-<vertex x="1" y="-0.19"/>
-<vertex x="0.94" y="-0.05"/>
-<vertex x="0.84" y="-0.05"/>
-<vertex x="0.83" y="-0.03"/>
-<vertex x="0.87" y="0.07"/>
-<vertex x="0.88" y="0.09"/>
-<vertex x="0.94" y="-0.05"/>
-<vertex x="1" y="-0.19"/>
-<vertex x="1.03" y="-0.23"/>
-<vertex x="1.08" y="-0.32"/>
-<vertex x="1.11" y="-0.35"/>
-<vertex x="1.16" y="-0.35"/>
-<vertex x="1.22" y="-0.32"/>
-<vertex x="1.24" y="-0.28"/>
-<vertex x="1.23" y="-0.24"/>
-<vertex x="0.96" y="0.32"/>
-</polygon>
-<polygon width="0.01" layer="21">
-<vertex x="1.79" y="0.38"/>
-<vertex x="1.64" y="0.38"/>
-<vertex x="1.59" y="0.37"/>
-<vertex x="1.54" y="0.35"/>
-<vertex x="1.5" y="0.32"/>
-<vertex x="1.46" y="0.28"/>
-<vertex x="1.44" y="0.24"/>
-<vertex x="1.43" y="0.2"/>
-<vertex x="1.45" y="0.15"/>
-<vertex x="1.5" y="0.12"/>
-<vertex x="1.55" y="0.12"/>
-<vertex x="1.58" y="0.15"/>
-<vertex x="1.61" y="0.19"/>
-<vertex x="1.66" y="0.21"/>
-<vertex x="1.71" y="0.21"/>
-<vertex x="1.75" y="0.18"/>
-<vertex x="1.75" y="0.14"/>
-<vertex x="1.71" y="0.12"/>
-<vertex x="1.65" y="0.11"/>
-<vertex x="1.61" y="0.1"/>
-<vertex x="1.6" y="0.05"/>
-<vertex x="1.6" y="-0.02"/>
-<vertex x="1.63" y="-0.05"/>
-<vertex x="1.67" y="-0.06"/>
-<vertex x="1.73" y="-0.06"/>
-<vertex x="1.77" y="-0.09"/>
-<vertex x="1.77" y="-0.14"/>
-<vertex x="1.74" y="-0.18"/>
-<vertex x="1.69" y="-0.19"/>
-<vertex x="1.63" y="-0.18"/>
-<vertex x="1.59" y="-0.16"/>
-<vertex x="1.57" y="-0.11"/>
-<vertex x="1.54" y="-0.08"/>
-<vertex x="1.48" y="-0.08"/>
-<vertex x="1.42" y="-0.09"/>
-<vertex x="1.4" y="-0.12"/>
-<vertex x="1.41" y="-0.17"/>
-<vertex x="1.42" y="-0.22"/>
-<vertex x="1.45" y="-0.26"/>
-<vertex x="1.49" y="-0.3"/>
-<vertex x="1.53" y="-0.32"/>
-<vertex x="1.57" y="-0.34"/>
-<vertex x="1.62" y="-0.35"/>
-<vertex x="1.68" y="-0.36"/>
-<vertex x="1.73" y="-0.35"/>
-<vertex x="1.78" y="-0.34"/>
-<vertex x="1.82" y="-0.32"/>
-<vertex x="1.86" y="-0.29"/>
-<vertex x="1.9" y="-0.25"/>
-<vertex x="1.93" y="-0.21"/>
-<vertex x="1.94" y="-0.17"/>
-<vertex x="1.95" y="-0.11"/>
-<vertex x="1.94" y="-0.06"/>
-<vertex x="1.91" y="-0.02"/>
-<vertex x="1.87" y="0.02"/>
-<vertex x="1.87" y="0.05"/>
-<vertex x="1.91" y="0.08"/>
-<vertex x="1.93" y="0.12"/>
-<vertex x="1.93" y="0.18"/>
-<vertex x="1.92" y="0.22"/>
-<vertex x="1.9" y="0.27"/>
-<vertex x="1.87" y="0.31"/>
-</polygon>
-</package>
 <package name="GND0">
 <polygon width="0.01" layer="21">
 <vertex x="0.92" y="0.09"/>
@@ -13085,8 +12899,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$82" library="output" package="#I�C#0" value="" x="10.287" y="15.113" smashed="yes" rot="MR0"/>
 <element name="U$84" library="output" package="#LED#0" value="" x="18.288" y="7.239" smashed="yes" rot="MR0"/>
 <element name="U$85" library="output" package="#SHLD#0" value="" x="13.208" y="2.921" smashed="yes" rot="MR0"/>
-<element name="U$1" library="output" package="STAT0" value="" x="8.001" y="34.29" smashed="yes"/>
-<element name="U$2" library="output" package="CHG0" value="" x="8.763" y="30.734" smashed="yes"/>
+<element name="U$1" library="output" package="STAT0" value="" x="8.128" y="34.29" smashed="yes"/>
+<element name="U$2" library="output" package="CHG0" value="" x="8.636" y="30.861" smashed="yes"/>
 <element name="U$5" library="output" package="##RST##0" value="" x="21.209" y="13.97" smashed="yes" rot="MR0"/>
 <element name="R20" library="SparkFun-Resistors" package="0402-TIGHT" value="10k" x="19.812" y="42.926" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.25" y="42.926" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -13095,7 +12909,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </element>
 <element name="TMS" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="7.62" y="34.29" smashed="yes" rot="MR0"/>
 <element name="GPIOC7" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="7.62" y="31.75" smashed="yes" rot="MR0"/>
-<element name="U$8" library="output" package="#MEAS#0" value="" x="9.144" y="25.4" smashed="yes"/>
+<element name="U$8" library="output" package="#MEAS#0" value="" x="9.906" y="25.4" smashed="yes"/>
 <element name="U$3" library="output" package="#MEAS_#0" value="" x="17.907" y="23.622" smashed="yes" rot="MR0"/>
 <element name="S1" library="SparkFun-Switches" package="SWITCH_DPDT_SMD_AYZ0202" value="" x="16.764" y="32.004" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.764" y="28.194" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -13103,8 +12917,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="SF_ID" value="COM-00597" x="16.764" y="32.004" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="VALUE" x="16.764" y="35.814" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="U$4" library="output" package="G0" value="" x="18.415" y="28.194" smashed="yes"/>
-<element name="U$9" library="output" package="3V0" value="" x="18.034" y="35.814" smashed="yes"/>
+<element name="U$4" library="output" package="G0" value="" x="18.415" y="35.814" smashed="yes"/>
+<element name="U$9" library="output" package="3V0" value="" x="18.034" y="28.194" smashed="yes"/>
 <element name="CHG_LED" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK" x="10.033" y="29.972" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.033" y="31.115" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="10.033" y="28.829" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
@@ -13144,11 +12958,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$44" library="output" package="90" value="" x="19.939" y="43.688" smashed="yes" rot="R90"/>
 <element name="U$45" library="output" package="80" value="" x="19.939" y="40.894" smashed="yes" rot="R90"/>
 <element name="U$47" library="output" package="70" value="" x="19.939" y="38.735" smashed="yes" rot="R90"/>
-<element name="U$52" library="output" package="A20" value="" x="18.669" y="37.846" smashed="yes"/>
-<element name="U$54" library="output" package="A30" value="" x="18.923" y="33.274" smashed="yes"/>
 <element name="U$55" library="output" package="GND0" value="" x="19.939" y="20.193" smashed="yes" rot="R90"/>
 <element name="U$57" library="output" package="3V30" value="" x="19.939" y="15.113" smashed="yes" rot="R90"/>
-<element name="U$58" library="output" package="70" value="" x="19.685" y="14.859" smashed="yes"/>
 <element name="U$59" library="output" package="#CHG#0" value="" x="15.24" y="29.845" smashed="yes" rot="MR0"/>
 <element name="U$10" library="output" package="#CH340#0" value="" x="20.701" y="11.43" smashed="yes" rot="MR0"/>
 <element name="U$11" library="output" package="#0#SDA#0" value="" x="7.747" y="52.07" smashed="yes" rot="MR0"/>
@@ -13399,6 +13210,7 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="2.286" y="22.733" extent="1-16" drill="0.3048"/>
 <via x="8.509" y="19.939" extent="1-16" drill="0.3048"/>
 <via x="8.382" y="8.382" extent="1-16" drill="0.3048"/>
+<via x="18.161" y="38.227" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="V_USB">
 <contactref element="D2" pad="A"/>
@@ -14162,15 +13974,15 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <approved hash="19,1,04a00400a440a4e0"/>
 <approved hash="19,1,11261187b047b0e6"/>
 <approved hash="19,1,d148d268c228c108"/>
-<approved hash="19,16,0a7e0b8d798d787e"/>
-<approved hash="19,16,79d0ea23c9e1de44"/>
-<approved hash="19,16,799279900b100b12"/>
-<approved hash="19,16,7a0279008b008802"/>
-<approved hash="19,16,0b900b911b911b90"/>
-<approved hash="19,16,77c27781b181b1c2"/>
-<approved hash="19,16,9681968390839081"/>
-<approved hash="19,16,02ca0167836780ca"/>
-<approved hash="19,16,1a801a8008800880"/>
+<approved hash="19,16,b6a2b822d220d6e2"/>
+<approved hash="19,16,b492ad52c350c492"/>
+<approved hash="19,16,71530d9323972653"/>
+<approved hash="19,16,21512b179513915f"/>
+<approved hash="19,16,46a44ecc9ecc96a4"/>
+<approved hash="19,16,434bc2a4c0aec338"/>
+<approved hash="19,16,7b5041925b915850"/>
+<approved hash="19,16,6d76bc2a0dae5e5f"/>
+<approved hash="19,16,979a8dbb9b38a79a"/>
 </errors>
 </board>
 </drawing>
