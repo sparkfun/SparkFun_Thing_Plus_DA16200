@@ -11,7 +11,7 @@ The module is Wi-Fi Alliance certified for IEEE802.11b/g/n, Wi-Fi Direct, WPS fu
 
 This module is now available in a [Thing Plus form factor](https://www.sparkfun.com/thing_plus), which includes a Qwiic and LiPo battery connectors, multiple GPIO pins, and JTAG PTH pins for debugging. The SparkFun Thing Plus - DA16200 is ideal for your next IoT project, thanks in part to the multiple sleep modes that allow you to take advantage of current draws as low as 0.2 - 3.5 &micro;A on the WiFi module.
 
-<p><div class="alert alert-warning"><b>Note:</b> Please be aware that the Thing Plus - DA16200 has a <b>3.3V</b> logic level voltage.</div></p>
+***Note:** Please be aware that the Thing Plus - DA16200 has a **3.3V** logic level voltage.*
 
 _The SparkFun [Qwiic connect system](https://www.sparkfun.com/qwiic) is an ecosystem of I2C sensors, actuators, shields and cables that make prototyping faster and less prone to error. All Qwiic-enabled boards use a common 1mm pitch, 4-pin JST connector. This reduces the amount of required PCB space, and polarized connections mean you can’t hook it up wrong._
 
