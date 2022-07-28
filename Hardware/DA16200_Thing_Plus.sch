@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18986,38 +18986,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </device>
 </devices>
 </deviceset>
-<deviceset name="200OHM" prefix="R">
-<description>&lt;h3&gt;200Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/10W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-08220"/>
-<attribute name="VALUE" value="200"/>
-</technology>
-</technologies>
-</device>
-<device name="-0402T-1/16W-1%" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-15550" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="100OHM" prefix="R">
 <description>&lt;h3&gt;100Ω resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
@@ -24311,7 +24279,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R11" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
 <part name="R12" library="SparkFun-Resistors" deviceset="27OHM" device="" value="27"/>
 <part name="SUPPLY14" library="SparkFun-PowerSymbols" deviceset="V_USB" device=""/>
-<part name="R13" library="SparkFun-Resistors" deviceset="200OHM" device="-0402T-1/16W-1%" value="200"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 <part name="CHG" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="10KOHM" device="-0402T-1/16W-1%" value="10k"/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -24331,6 +24299,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="DA_MEAS" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="CH_PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-16V-10%" value="0.1uF"/>
+<part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24390,7 +24361,7 @@ pin connected to 3.3V for normal
 operation. Flip the switch to connect 
 to GND and enter sleep mode 1. Refer 
 to the datasheet for more information.</text>
-<text x="203.2" y="132.08" size="1.778" layer="97" font="vector">Cut DA_MEAS jumper
+<text x="200.66" y="134.62" size="1.778" layer="97" font="vector">Cut DA_MEAS jumper
 to measure the current
 draw from just the
 DA16200 module.</text>
@@ -24594,8 +24565,8 @@ applications.</text>
 <attribute name="NAME" x="157.48" y="125.73" size="1.778" layer="95"/>
 <attribute name="VALUE" x="157.48" y="59.69" size="1.778" layer="96" align="top-left"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="198.12" y="137.16" smashed="yes">
-<attribute name="VALUE" x="198.12" y="139.954" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="180.34" y="134.62" smashed="yes">
+<attribute name="VALUE" x="180.34" y="137.414" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND3" gate="1" x="198.12" y="55.88" smashed="yes">
 <attribute name="VALUE" x="198.12" y="55.626" size="1.778" layer="96" align="top-center"/>
@@ -24683,9 +24654,9 @@ applications.</text>
 <instance part="SUPPLY14" gate="G$1" x="353.06" y="243.84" smashed="yes">
 <attribute name="VALUE" x="353.06" y="246.634" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="R13" gate="G$1" x="297.18" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.656" y="30.48" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="298.704" y="30.48" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R13" gate="G$1" x="297.18" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="295.656" y="33.02" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="298.704" y="33.02" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="CHG" gate="G$1" x="205.74" y="233.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="202.438" y="237.236" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
@@ -24735,7 +24706,7 @@ applications.</text>
 <instance part="CHG_LED" gate="G$1" x="149.86" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="146.812" y="233.68" size="1.778" layer="95" font="vector" rot="R90" align="center"/>
 </instance>
-<instance part="DA_MEAS" gate="G$1" x="198.12" y="129.54" smashed="yes" rot="R90">
+<instance part="DA_MEAS" gate="G$1" x="190.5" y="132.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="190.5" y="129.032" size="1.778" layer="95" font="vector" rot="R180" align="center"/>
 </instance>
 <instance part="CH_PWR" gate="G$1" x="375.92" y="251.46" smashed="yes" rot="R90">
@@ -24743,6 +24714,16 @@ applications.</text>
 </instance>
 <instance part="GND2" gate="1" x="304.8" y="210.82" smashed="yes">
 <attribute name="VALUE" x="304.8" y="210.566" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="C2" gate="G$1" x="203.2" y="124.46" smashed="yes">
+<attribute name="NAME" x="204.724" y="127.381" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="204.724" y="122.301" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND25" gate="1" x="203.2" y="116.84" smashed="yes">
+<attribute name="VALUE" x="203.2" y="116.586" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY2" gate="G$1" x="297.18" y="40.64" smashed="yes">
+<attribute name="VALUE" x="297.18" y="43.434" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -24805,12 +24786,18 @@ applications.</text>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
 <pinref part="DA_MEAS" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="137.16" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="134.62" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CH_PWR" gate="G$1" pin="2"/>
 <pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
 <wire x1="375.92" y1="256.54" x2="375.92" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+<wire x1="297.18" y1="40.64" x2="297.18" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -24972,6 +24959,11 @@ applications.</text>
 <wire x1="304.8" y1="215.9" x2="304.8" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="203.2" y1="119.38" x2="203.2" y2="121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V_USB" class="0">
 <segment>
@@ -25122,10 +25114,13 @@ applications.</text>
 <label x="198.12" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="35.56" x2="297.18" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="38.1" x2="294.64" y2="38.1" width="0.1524" layer="91"/>
-<label x="294.64" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="297.18" y1="25.4" x2="294.64" y2="25.4" width="0.1524" layer="91"/>
+<label x="294.64" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="22.86" x2="297.18" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="25.4" x2="297.18" y2="27.94" width="0.1524" layer="91"/>
+<junction x="297.18" y="25.4"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="SCK"/>
@@ -25496,13 +25491,6 @@ applications.</text>
 <wire x1="368.3" y1="228.6" x2="365.76" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="25.4" x2="297.18" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="CHG" gate="G$1" pin="3"/>
@@ -25602,8 +25590,13 @@ applications.</text>
 <wire x1="195.58" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
 <junction x="198.12" y="119.38"/>
 <pinref part="DA_MEAS" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="124.46" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
 <junction x="198.12" y="121.92"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="129.54" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="132.08" x2="195.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="121.92" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
+<junction x="198.12" y="132.08"/>
 </segment>
 </net>
 <net name="N$26" class="0">
