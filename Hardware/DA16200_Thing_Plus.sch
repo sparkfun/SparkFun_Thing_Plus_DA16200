@@ -24323,7 +24323,7 @@ VIN: 2.5V-6V</text>
 <text x="297.18" y="58.42" size="2.54" layer="94" font="vector" align="center">Reset Button</text>
 <text x="312.42" y="127" size="2.54" layer="94" font="vector" align="center">Status LED</text>
 <text x="386.08" y="157.48" size="2.54" layer="94" font="vector" align="center">Thing Plus</text>
-<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v10</text>
+<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v11</text>
 <text x="38.1" y="185.42" size="2.54" layer="94" font="vector" align="center">Qwiic Connector</text>
 <text x="358.14" y="269.24" size="2.54" layer="94" font="vector" align="center">USB-C Firmware Upload</text>
 <text x="33.02" y="137.16" size="1.778" layer="97" font="vector">Cut the I2C pullup 
