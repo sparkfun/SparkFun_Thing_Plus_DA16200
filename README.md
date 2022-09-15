@@ -1,7 +1,7 @@
 SparkFun Thing Plus - DA16200
 ========================================
 
-[![SparkFun Thing Plus - DA16200](<link>)](https://www.sparkfun.com/products/19696)
+[![SparkFun Thing Plus - DA16200](https://cdn.sparkfun.com//assets/parts/1/9/3/9/3/DA16200-_07.jpg)](https://www.sparkfun.com/products/19696)
 
 [*SparkFun Thing Plus - DA16200 (WRL-19696)*](https://www.sparkfun.com/products/19696)
 
@@ -19,7 +19,14 @@ _The SparkFun [Qwiic connect system](https://www.sparkfun.com/qwiic) is an ecosy
 Repository Contents
 -------------------
 
-* **/Documents** - WiFi module documentation from manufacturer
+* **[/docs](/docs/)** - Documentation files
+    * [board_files](/docs/board_files/) - Files for the product design
+        * [Eagle design files](/docs/board_files/eagle_files.zip) (.zip)
+        * [Schematic](/docs/board_files/schematic.pdf) (.pdf)
+        * [Dimensions](/docs/board_files/dimensions.pdf) (.pdf)
+    * [component_datasheets](/docs/component_datasheets/) - Datasheets and guides for hardware components
+    * [img/hookup_guide/](/docs/img/hookup_guide/) - Images for hookup guide documentation
+* **[/Firmware](/Firmware/)** - Prebuilt Example Projects
 * **/Hardware** - Eagle design files (.brd, .sch)
 * **/Hardware/Production** - Production panel files (.brd)
 * **Logic Analyzer Data** - Logic analyzer data from testing
