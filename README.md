@@ -13,7 +13,7 @@ This module is now available in a [Thing Plus form factor](https://www.sparkfun.
 
 ***Note:** Please be aware that the Thing Plus - DA16200 has a **3.3V** logic level voltage.*
 
-_The SparkFun [Qwiic connect system](https://www.sparkfun.com/qwiic) is an ecosystem of I2C sensors, actuators, shields and cables that make prototyping faster and less prone to error. All Qwiic-enabled boards use a common 1mm pitch, 4-pin JST connector. This reduces the amount of required PCB space, and polarized connections mean you can’t hook it up wrong._
+_The SparkFun [Qwiic connect system](https://www.sparkfun.com/qwiic) is an ecosystem of I2C sensors, actuators, shields and cables that make prototyping faster and less prone to error. All Qwiic-enabled boards use a common 1mm pitch, 4-pin JST connector. This reduces the amount of required PCB space, and polarized connections mean you can't hook it up wrong._
 
 
 Repository Contents
@@ -24,7 +24,7 @@ Repository Contents
         * [Eagle design files](/docs/board_files/eagle_files.zip) (.zip)
         * [Schematic](/docs/board_files/schematic.pdf) (.pdf)
         * [Dimensions](/docs/board_files/dimensions.pdf) (.pdf)
-    * [component_datasheets](/docs/component_datasheets/) - Datasheets and guides for hardware components
+    * [component_documentation](/docs/component_datasheets/) - Datasheets and guides for hardware components
     * [img/hookup_guide/](/docs/img/hookup_guide/) - Images for hookup guide documentation
 * **[/Firmware](/Firmware/)** - Prebuilt Example Projects
 * **/Hardware** - Eagle design files (.brd, .sch)
